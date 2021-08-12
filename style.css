@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #abbaab, #ffffff);
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+header h1 {
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.hr-line {
+  height: 5px;
+  width: 70px;
+  background-color: rgb(204, 125, 34);
+  margin-top: 20px;
+  border-radius: 5px;
+}
+nav {
+  margin-top: 50px;
+}
+ul {
+  display: flex;
+}
+
+ul li {
+  margin-left: 10px;
+  padding: 10px 20px;
+  list-style: none;
+  border: 1px solid rgb(204, 125, 34);
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px rgb(204, 125, 34);
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+ul li:hover {
+  background-color: rgb(204, 125, 34);
+  color: white;
+}
+ul li:hover a {
+  color: white;
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgb(204, 125, 34);
+}
+main {
+  width: 40vw;
+  display: flex;
+  margin-left: 50px;
+  margin-top: 80px;
+  height: 500px;
+  overflow-y: hidden;
+  /* flex-wrap: wrap; */
+}
+main img {
+  width: 15rem;
+  height: 10rem;
+  border: 3px solid rgb(204, 125, 34);
+  border-radius: 10px;
+}
+
+.food-info {
+  margin-left: 20px;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+.line {
+  height: 3px;
+  background-color: rgb(204, 125, 34);
+  width: 100%;
+}
+
+.food-name {
+  letter-spacing: 1px;
+  margin-right: 80px;
+  font-size: 1.3rem;
+}
+
+.food-price {
+  color: rgb(204, 125, 34);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.container {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 90%;
+  }
+  main {
+    display: block;
+    width: 80%;
+    overflow: hidden;
+    height: 100%;
+  }
+  .food-info {
+  }
+}
